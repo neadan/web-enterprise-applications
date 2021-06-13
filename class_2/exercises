@@ -1,0 +1,46 @@
+1. Create the following class:
+
+--ElectronicDevice--
+    name
+    brand
+    turn_on() # prints "Turning *name* on..."
+    turn_off() # prints "Turning *name* off..."
+
+2. Create the following subclasses of ElectronicDevice
+
+--Camera--
+    take_picture() # prints "Taking picture with camera..."
+
+--Television--
+    screen_size
+    volume # Value must always be initialized at 0
+    volume_up(increment) # Raises volume by increment
+    volume_down(increment) # Lowers the volume by increment
+    display_volume() # prints the current volume
+
+3. Add the method print_details() to both the Camera and Television classes
+
+print_details()
+# for camera: prints the name, brand
+# for television: prints the name, brand, and screen size
+
+Hint: python super() stackoverflow
+
+4. Add an optional 'case' argument to your Camera constructor, that defaults to "leather"
+Hint: google python default argument constructor
+
+5. Create instances of your Television and Camera classes and test out your methods.
+eg.
+# don't forget imports
+my_television = Television(name="XC5000", brand='Samsung', screen_size=65)
+my_television.turn_on()
+my_television.display_volume()
+my_television.volume_up(2)
+my_television.display_volume()
+my_television.print_details()
+my_camera = Camera()
+my_camera = Camera(case='plastic')
+
+
+
+
