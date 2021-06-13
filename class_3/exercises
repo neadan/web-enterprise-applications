@@ -1,5 +1,5 @@
 1. Add the following attribute and functions to the Television class
-channels # note: this will be a dictionary
+channels # note: this will be a dictionary eg. 60: "CBC"
 add_channel() # adds a channel
 remove_channel() # removes a channel
 
