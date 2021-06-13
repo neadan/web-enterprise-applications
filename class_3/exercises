@@ -9,7 +9,7 @@ add_tv(tv) # add a TV to the store stock
 add_tvs(list_of_tvs) # add a list of televisions to the store stock
 add_camera(camera) # add a camera to the store stock
 add_cameras(list_of_cameras) # add a list of cameras to the store stock
-sell(item) # sells (removes) the oldest item (index 0) of that type -- raises a RuntimeError if there are no items left of that type
+sell(item) # sells (removes) the oldest item (index 0) of that type -- raises a ValueError if there are no items left of that type
 display_stock() # prints the number of televisions and number of cameras in the store
 
 3. In the main script:
