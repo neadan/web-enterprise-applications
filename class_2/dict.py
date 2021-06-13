@@ -27,6 +27,8 @@ grocery_items = {"Oscar": ["apples", "bananas", "cherries"],
                  "Daniel": ['Peppers', 'Steak'],
                  "Arezoo": ['Bananas', 'Fries']}
 
+grocery_items["Oscar"]
+
 print(grocery_items)
 
 # get class of grocery_items
