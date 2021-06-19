@@ -3,7 +3,7 @@ User enters: "Barack Obama"
 Accept user input of how many times a specific word is called
 User enters: "the"
 
-Create a file that contains:
+Print:
 The url to "Barack Obama" is https://en.wikipedia.org/wiki/Barack_Obama
 Number of words: 658
 "the" appears: 35 times
