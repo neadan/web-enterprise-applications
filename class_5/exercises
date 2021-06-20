@@ -19,11 +19,53 @@ File -> Open
 Navigate to fortuneteller directory
 
 # Activate virtual environment in PyCharm's terminal
-source path/to/venv/Scripts/activate
+If git bash is not your terminal (does not look like git bash)
+ctrl-alt-s (goes to settings)
+Tools -> Terminal
+Set shell path to: C:\Program Files\Git\bin\bash.exe
+source ../venv/Scripts/activate
 
 # Configure python interpreter (bottom right) to point to the python.exe in your virtual environment:
 path/to/venv/Scripts/python.exe
 
+# Migrate
+python manage.py migrate
+
 # Start the server
 python manage.py runserver
+To stop the server, it's Ctrl-C
+
+***************************************
+
+# Create app randomfortune
+python manage.py startapp randomfortune
+
+# Add our new app to the settings.py file (in the INSTALLED_APPS list):
+    'randomfortune.apps.RandomfortuneConfig',
+
+# Create a urls.py in the randomfortune/
+randomfortune/urls.py (leave it empty for now)
+
+# Create the following file, which will be our html:
+randomfortune/templates/randomfortune/fortune.html
+
+# Create the view in randomfortune/views.py
+def fortune()...
+
+# Add code to randomfortune.urls
+
+# Add path to fortuneteller.urls
+
+# Server should now be up! Go to localhost:8000/random in your browser and it should work.
+If it doesn't (like me), go through each step again and try to see why
+
+#Now we want to have the placeholder dynamically update with a random fortune.
+Add a fortune_list and context to randomfortune.views and pass the context to the render function.
+Use random.choice(fortune_list) to select a fortune at random
+
+# Update your fortune.html to read from the context with:
+{{ fortune }}
+
+
+
 
