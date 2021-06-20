@@ -1,0 +1,29 @@
+Note: if the python command doesn't work, try python3
+
+How to create the fortuneteller project:
+
+# Create virtual environment:
+python -m venv ./venv
+
+# Enter virtual environment:
+source venv/Scripts/activate
+
+# Install django in our virtual environment:
+pip install django
+
+# Create fortuneteller project:
+django-admin startproject fortuneteller
+
+# Open project in PyCharm
+File -> Open
+Navigate to fortuneteller directory
+
+# Activate virtual environment in PyCharm's terminal
+source path/to/venv/Scripts/activate
+
+# Configure python interpreter (bottom right) to point to the python.exe in your virtual environment:
+path/to/venv/Scripts/python.exe
+
+# Start the server
+python manage.py runserver
+
